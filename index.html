@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Elevate - Transformando o Aprendizado em Tecnologia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&display=swap">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <nav>
+            <button class="skip-link" aria-label="Pular para o conteúdo principal">Pular para o conteúdo</button>
+            <div class="controls">
+                <button id="prevBtn" aria-label="Slide anterior">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slide-indicator">
+                    <span id="slideCounter" aria-live="polite">1/5</span>
+                    <div class="indicator-dots" id="indicatorDots"></div>
+                </div>
+                <button id="nextBtn" aria-label="Próximo slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="presentation">
+        <!-- Slide 1: Introdução -->
+        <section class="slide active" id="slide1" data-color="blue">
+            <div class="content glass-effect">
+                <div class="logo-container">
+                    <div class="logo">
+                        <div class="logo-text">Elevate<span class="logo-highlight">.</span></div>
+                        <div class="logo-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                    </div>
+                </div>
+                <h1>Transformando o Aprendizado</h1>
+                <div class="tagline-container">
+                    <p class="tagline">Uma plataforma revolucionária para educação tecnológica</p>
+                    <div class="tagline-underline"></div>
+                </div>
+                
+                <div class="floating-elements">
+                    <div class="floating-element" style="--delay: 0s"><i class="fas fa-rocket"></i></div>
+                    <div class="floating-element" style="--delay: 2s"><i class="fas fa-lightbulb"></i></div>
+                    <div class="floating-element" style="--delay: 4s"><i class="fas fa-brain"></i></div>
+                    <div class="floating-element" style="--delay: 6s"><i class="fas fa-star"></i></div>
+                </div>
+                
+                <div class="cta-container">
+                    <button class="cta-button pulse-effect">Conheça o Futuro</button>
+                </div>
+                
+                <div class="sustainability-badge" aria-label="Compromisso com sustentabilidade">
+                    <i class="fas fa-recycle eco-icon"></i>
+                    <span>Tecnologia Sustentável</span>
+                </div>
+            </div>
+            <div class="background-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+            </div>
+            <div class="swipe-indicator">
+                <i class="fas fa-chevron-left"></i>
+                Deslize para navegar
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <!-- Slide 2: O Problema -->
+        <section class="slide" id="slide2" data-color="purple">
+            <div class="content glass-effect">
+                <h2>O Desafio no Aprendizado</h2>
+                
+                <div class="problem-container">
+                    <div class="problem-card hover-float">
+                        <div class="card-front">
+                            <div class="icon"><i class="fas fa-times-circle"></i></div>
+                            <p>Conteúdos Desorganizados</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Milhares de vídeos e tutoriais sem uma estrutura clara de aprendizado</p>
+                        </div>
+                    </div>
+                    <div class="problem-card hover-float">
+                        <div class="card-front">
+                            <div class="icon"><i class="fas fa-times-circle"></i></div>
+                            <p>Sem Direcionamento</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Estudantes perdidos sem saber qual caminho seguir para o mercado</p>
+                        </div>
+                    </div>
+                    <div class="problem-card hover-float">
+                        <div class="card-front">
+                            <div class="icon"><i class="fas fa-times-circle"></i></div>
+                            <p>Hábitos Ineficientes</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Dificuldade em manter consistência e criar rotinas de estudo produtivas</p>
+                        </div>
+                    </div>
+                    <div class="problem-card hover-float">
+                        <div class="card-front">
+                            <div class="icon"><i class="fas fa-times-circle"></i></div>
+                            <p>Desconexão com Emprego</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Abismo entre o que se aprende e o que o mercado realmente precisa</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quote">
+                    <p>"As plataformas atuais não conectam aprendizado à prática real."</p>
+                </div>
+                
+                <div class="easter-egg">
+                    <div class="hidden-message">Encontrou o easter egg! <i class="fas fa-gamepad"></i></div>
+                </div>
+            </div>
+            <div class="swipe-indicator">
+                <i class="fas fa-chevron-left"></i>
+                Deslize para navegar
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <!-- Slide 3: A Solução -->
+        <section class="slide" id="slide3" data-color="teal">
+            <div class="content glass-effect">
+                <h2>Nossa Solução: Elevate</h2>
+                
+                <div class="solution-grid">
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fas fa-route"></i>
+                            </div>
+                        </div>
+                        <h3>Trilhas Inteligentes</h3>
+                        <p>Organizadas por profissões e níveis</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <h3>IA Personalizada</h3>
+                        <p>Seu mentor digital adaptativo</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                        </div>
+                        <h3>Gamificação</h3>
+                        <p>Aprendizado divertido e envolvente</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <h3>Simulações Reais</h3>
+                        <p>Entrevistas e desafios práticos</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fab fa-github"></i>
+                            </div>
+                        </div>
+                        <h3>Portfólio Integrado</h3>
+                        <p>GitHub e certificação reconhecida</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 92%"></div>
+                        </div>
+                    </div>
+                    <div class="solution-item hover-glow">
+                        <div class="solution-icon">
+                            <div class="icon-modern">
+                                <i class="fas fa-users"></i>
+                            </div>
+                        </div>
+                        <h3>Comunidade Vibrante</h3>
+                        <p>Aprendizado colaborativo e inclusivo</p>
+                        <div class="solution-progress">
+                            <div class="progress-fill" style="--fill-percent: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interactive-demo">
+                    <button class="demo-button" id="demoButton">Ver Demo</button>
+                    <div class="demo-container" id="demoContainer">
+                        <div class="demo-screen">
+                            <div class="demo-header">
+                                <div class="demo-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="demo-title">Elevate Platform</div>
+                            </div>
+                            <div class="demo-content">
+                                <div class="demo-sidebar">
+                                    <div class="demo-menu-item active">Dashboard</div>
+                                    <div class="demo-menu-item">Trilhas</div>
+                                    <div class="demo-menu-item">Projetos</div>
+                                    <div class="demo-menu-item">Comunidade</div>
+                                </div>
+                                <div class="demo-main">
+                                    <div class="demo-progress">
+                                        <div class="demo-progress-bar"></div>
+                                    </div>
+                                    <div class="demo-cards">
+                                        <div class="demo-card"></div>
+                                        <div class="demo-card"></div>
+                                        <div class="demo-card"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swipe-indicator">
+                <i class="fas fa-chevron-left"></i>
+                Deslize para navegar
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <!-- Slide 4: Resultados -->
+        <section class="slide" id="slide4" data-color="pink">
+            <div class="content glass-effect">
+                <h2>O Impacto do Elevate</h2>
+                
+                <div class="results-container">
+                    <div class="result-card">
+                        <div class="icon-modern">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="result-content">
+                            <h3>Aprendizado Fluido</h3>
+                            <p>Estruturado e conectado ao mercado</p>
+                            <div class="result-stat">
+                                <span class="counter" data-target="95">0</span>%
+                                <span class="stat-label">Satisfação</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="icon-modern">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="result-content">
+                            <h3>Guia Claro</h3>
+                            <p>Carreiras e aprendizado sem obstáculos</p>
+                            <div class="result-stat">
+                                <span class="counter" data-target="87">0</span>%
+                                <span class="stat-label">Clareza</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="icon-modern">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="result-content">
+                            <h3>Maior Retenção</h3>
+                            <p>Hábitos diários e consistência</p>
+                            <div class="result-stat">
+                                <span class="counter" data-target="78">0</span>%
+                                <span class="stat-label">Retenção</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="result-card">
+                        <div class="icon-modern">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="result-content">
+                            <h3>Empregabilidade</h3>
+                            <p>Profissionais conquistando o mercado</p>
+                            <div class="result-stat">
+                                <span class="counter" data-target="92">0</span>%
+                                <span class="stat-label">Colocação</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-statement">
+                    <p>O Elevate não é apenas uma plataforma de estudo. É um movimento para transformar o ensino de tecnologia, conectar talentos ao mercado e preparar profissionais para o futuro.</p>
+                </div>
+                
+                <div class="impact-chart">
+                    <div class="chart-bar">
+                        <div class="chart-label">Aprendizado</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 95%;">95%</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="chart-label">Retenção</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 87%;">87%</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="chart-label">Empregabilidade</div>
+                        <div class="chart-track">
+                            <div class="chart-fill" style="width: 92%;">92%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swipe-indicator">
+                <i class="fas fa-chevron-left"></i>
+                Deslize para navegar
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+
+        <!-- Slide 5: Call to Action -->
+        <section class="slide" id="slide5" data-color="orange">
+            <div class="content glass-effect">
+                <h2>Junte-se à Revolução do Aprendizado</h2>
+                
+                <div class="cta-final">
+                    <p class="highlight-text">Transforme sua jornada de aprendizado em tecnologia</p>
+                    
+                    <div class="cta-buttons">
+                        <button class="cta-button primary neon-effect">Comece Agora</button>
+                        <button class="cta-button secondary glow-effect">Agende uma Demo</button>
+                    </div>
+                    
+                    <div class="countdown-container">
+                        <p>Oferta de lançamento termina em:</p>
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span id="days">30</span>
+                                <span class="countdown-label">Dias</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="hours">23</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="minutes">59</span>
+                                <span class="countdown-label">Minutos</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span id="seconds">59</span>
+                                <span class="countdown-label">Segundos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="diversity-container">
+                    <div class="diversity-icons">
+                        <div class="avatar-group">
+                            <div class="avatar" style="--avatar-color: #2760E9"><i class="fas fa-user"></i></div>
+                            <div class="avatar" style="--avatar-color: #1EAEDB"><i class="fas fa-user"></i></div>
+                            <div class="avatar" style="--avatar-color: #2760E9"><i class="fas fa-user"></i></div>
+                            <div class="avatar" style="--avatar-color: #1EAEDB"><i class="fas fa-user"></i></div>
+                            <div class="avatar" style="--avatar-color: #2760E9"><i class="fas fa-user"></i></div>
+                        </div>
+                    </div>
+                    <p>Comprometidos com acessibilidade, inclusão e diversidade</p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <span>contato@elevate.tech</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon"><i class="fas fa-globe"></i></span>
+                        <span>www.elevate.tech</span>
+                    </div>
+                    <div class="social-icons">
+                        <div class="social-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="social-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="social-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="social-icon"><i class="fab fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swipe-indicator">
+                <i class="fas fa-chevron-left"></i>
+                Deslize para navegar
+                <i class="fas fa-chevron-right"></i>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Elevate. Todos os direitos reservados.</p>
+            <div class="accessibility-controls">
+                <button id="increaseText" aria-label="Aumentar texto">A+</button>
+                <button id="decreaseText" aria-label="Diminuir texto">A-</button>
+                <button id="toggleContrast" aria-label="Alternar alto contraste">Contraste</button>
+                <button id="toggleSound" aria-label="Alternar som"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
