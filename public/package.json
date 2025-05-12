@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "echo 'no build script'"
+    "start": "vercel dev",
+    "build": "cp -r public/ dist/"
   }
 }
